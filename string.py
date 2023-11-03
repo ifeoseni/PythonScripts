@@ -32,4 +32,17 @@ print(print_last_concatenated_string)
 print(create_upperCase)
 print(create_lowerCase)
 
-# TO remove with space you can use rstrip(), lstrip(), strip() in-built string method
+
+
+# TO remove with space you can use .rstrip(), .lstrip(), .strip() in-built string method
+my_name = " Oseni "
+my_name_no_whitespace = my_name.strip()
+print(my_name)
+print(my_name_no_whitespace)
+
+# determine what letter starts a word using .startswith('Word') note that it is case sensitive
+starship = "Enterprise"
+confirm_status = starship.startswith('en')
+endswith = starship.endswith('Enterprise')
+print(endswith)
+
