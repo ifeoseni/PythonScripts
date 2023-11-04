@@ -38,4 +38,3 @@ def cube(number):
 see_cube = cube(3)
 print(see_cube)
 print(cube(2))
-
