@@ -24,6 +24,55 @@ print(f"integerdivision of {number1} and {number2} is {integerdivision}")  # thi
 print(f"modulus of {number1} and {number2} is {modulus}")  # this will return the remainder of the division
 print(f"exponential of {number1} and {number2} is {exponential}")  # this will return the decimal value too
 
+# other methods used for numbers include round(number),abs(number) and pow(number)
 
+# round(2.5) will return 2 because the number before the 5 is an even number. If it is a odd number it will e rounded up
 
+# using round(number,amount) will show the amount of decimal unit after integer. Note that amount must be an integer
 
+# difference between pow and ** is that pow can take 3 argument which are pow(number,power,powervaluemodulusthisamount)
+pow(2,3,4)  # 2 ** 3 %4 = 8 % 4 = 0
+
+# only number method that comes after the number like string .lower() is is_number()
+
+# revision exercise
+number = input("Enter number")
+two_dp = round(float(number),2)  # anserr to number 1
+print(two_dp)
+absolute = abs(two_dp)
+
+print(two_dp)
+print(absolute)
+
+number2 = input('Enter second number')
+difference = two_dp - float(number2)
+abs_number = abs(difference)
+
+check_if_number = abs_number.is_integer()
+print(check_if_number)
+
+n = 3233
+print(f"{n: ,.4f}")  # using , will group in 3s and the 4f will be rounded up or down to 4 digit
+
+print(f'Naira {n: ,.2f}')  # used for currency
+
+# use of %
+ratio = 0.5
+print(f'Ratio is {ratio: .1%}')  # this will convert your text to ratio
+
+# note that the .n% and .nf can not go together
+
+# 5.6 exercise
+expo = 3 ** .125
+print(f"{expo: ,.3f}")
+currency = 150000
+print(f'{currency: ,.2f}')
+two_ratio = 2 / 10
+print(f'{two_ratio: .0%}')
+
+# 5.7 complex number
+n = 1 + 2j  #where n = 1i + 2j
+n_real = n.real
+n_imag = n.imag
+n_conjugate = n.conjugate()  # returns the formula
+print(f'{n.real} is the real number and {n.imag} is the imaginary number')
