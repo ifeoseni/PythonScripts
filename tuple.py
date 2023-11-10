@@ -26,3 +26,5 @@ checking_x = "x" in my_name # note that we did not include the for keyword and t
 print(checking_x)
 my_name_without_I = my_name[1:]
 print(my_name_without_I)
+
+# tuple is immutatble i.e the values can't be changed unless you create another tuple with the new value
